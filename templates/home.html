@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <title>ProvBlog</title>
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/provblog.css') }}">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/highlight-default.css') }}">
     <script src="{{ url_for('static', filename='js/highlight.pack.js') }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
-    <h1>ProvBlog</h1>
-    <pre><code class="python">
-        def test():
-            """This is a test functin for highlighting
-            """
-            print 'test'
-            return
-    </code></pre>
+
+    <div style="width: 980px; margin: 0 auto; overflow: hidden;">
+        <div style="float: left; width: 80%;">
+
+
+            <h1>ProvBlog</h1>
+            <pre><code class="python">
+                def test():
+                    """This is a test functin for highlighting
+                    """
+                    print 'test'
+                    return
+            </code></pre>
+            <p>This is some ASAP font!</p>
+
+
+        </div>
+        <div style="float: right; width: 20%;">Right Column</div>
+    </div>
+
 </body>
 </html>
