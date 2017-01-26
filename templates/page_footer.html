@@ -1,0 +1,17 @@
+    </article>
+    <nav style="float: right; width: 18%; margin-left:2%;">
+        <h3>Posts</h3>
+        <ul id="postlinks">
+            {%  for post in posts %}
+                <li><a href="{{ url_for('posts.post', filename=post['link']) }}">{{ post['title'] }}</a><br /><span style="font-size:smaller;">{{ post['date'] }}</span></li>
+            {%  endfor %}
+        </ul>
+    </nav>
+
+    <footer style="clear:both; border-top:solid 2px grey; text-align:center">
+        <p>Posted by: <a href="">Nicholas Car</a></p>
+        <p>Contact information: <a href="mailto:someone@example.com">
+        someone@example.com</a>.</p>
+    </footer>
+</body>
+</html>

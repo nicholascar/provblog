@@ -76,3 +76,16 @@ h4 {
 }
 
 /* Sidebar */
+#postlinks {
+    list-style: none;
+    text-indent: -0.7em;
+    margin-left: -2.0em;
+}
+
+ul#postlinks li:before {
+ content: "\0BB \020";
+ }
+
+ul#postlinks li {
+    margin-bottom: 10px;
+}
