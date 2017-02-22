@@ -1,50 +1,40 @@
-/* Fonts */
-@font-face {
-    font-family: 'Coolvetica';
-    src: url('CoolveticaRg-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Asap';
-    src: url('Asap-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Asap';
-    src: url('Asap-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Asap';
-    src: url('Asap-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Asap';
-    src: url('Asap-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Libre Baskerville';
-    src: url('librebaskerville-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Elements text styles */
-p {
+body {
+    margin: 0 auto;
+    background-color:grey;
+    text-align:center;
+}
+
+#container {
+    margin: 0 auto;
+    width: 980px;
+    background-color:white;
+    text-align:left;
+}
+
+header {
+    border-bottom:solid 2px grey;
+    padding: 0 10px 0 10px;
+}
+
+article#main {
+    float:left;
+    width:78%;
+    padding: 0 0 0 2%;
+}
+
+footer {
+    clear:both;
+    border-top:solid 2px grey;
+    text-align:center;
+    padding: 0 0 5px 0;
+}
+
+/* text */
+p, li {
     font-family: Asap, sans-serif;
     color: #383838;
+    line-height: 1.5em;
 }
 
 h1 {
@@ -52,10 +42,11 @@ h1 {
     color: #383838;
     text-transform: uppercase;
     font-weight:300;
+    /*text-shadow: 4px 4px 4px #aaa;*/
 }
 
 h2, h3, h4 {
-    font-family: 'Coolvetica', sans-serif;
+    font-family: Asap, sans-serif;
     color: #383838;
 }
 
@@ -73,6 +64,25 @@ h3 {
 
 h4 {
     font-size: 1.25em;
+}
+
+header {
+    background: #ffffff url('/static/img/banner-PROV.png') no-repeat right top;
+}
+
+header h1 {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+header > div {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+header > div > a {
+    font-family: Asap, sans-serif;
+    color: #383838;
+    font-weight:bold;
+    margin: 0 0 0 2em;
 }
 
 /* Sidebar */
