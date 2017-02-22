@@ -1,7 +1,6 @@
 from flask import Blueprint, render_template, Markup
 #from flask.ext.misaka import Misaka
 import markdown
-import markdown2
 from routes.functions import _get_posts
 posts = Blueprint('posts', __name__)
 
