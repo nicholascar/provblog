@@ -1,8 +1,10 @@
 import os
+from os.path import join, dirname, abspath
 
 
 def _get_posts():
-    postfiles = os.listdir('posts')
+
+    postfiles = join(abspath(join(dirname(abspath(__file__)), os.pardir)), 'posts')
     posts = []
     for pf in postfiles:
         posts.append(
