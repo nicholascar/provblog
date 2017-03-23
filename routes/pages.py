@@ -14,3 +14,10 @@ def home(template):
     content = Markup(markdown.markdown(md))
     return render_template(template, **locals())
 
+
+@pages.route('/page/<page>')
+def page(page):
+    posts = _get_posts()
+    md = open(join(dirname(dirname(abspath(__file__))), 'pages', page + '.md')).read()
+    content = Markup(markdown.markdown(md))
+    return render_template('page.html', **locals())

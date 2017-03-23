@@ -6,7 +6,7 @@ api = Blueprint('api', __name__)
 @api.route('/api')
 def api_home():
     posts = _get_posts()
-    return render_template('api.html', **locals())
+    return render_template('tools.html', **locals())
 
 
 @api.route('/api/lodge-pingback')

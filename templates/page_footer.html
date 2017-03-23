@@ -1,17 +1,17 @@
     </article>
     <nav style="float: right; width: 18%; margin-left:2%;">
+        {% if posts != '' %}
         <h3>Posts</h3>
         <ul id="postlinks">
             {%  for post in posts %}
                 <li><a href="{{ url_for('posts.post', filename=post['link']) }}">{{ post['title'] }}</a><br /><span style="font-size:smaller;">{{ post['date'] }}</span></li>
             {%  endfor %}
         </ul>
+        {% endif %}
     </nav>
 
     <footer>
-        <p>Posted by: <a href="">Nicholas Car</a></p>
-        <p>Contact information: <a href="mailto:someone@example.com">
-        someone@example.com</a>.</p>
+        {% include 'nav.html' %}
     </footer>
     </div><!-- #conteiner -->
 </body>

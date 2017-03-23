@@ -5,6 +5,12 @@ from routes.functions import _get_posts
 posts = Blueprint('posts', __name__)
 
 
+@posts.route('/post/')
+def postss():
+    posts = _get_posts()
+    return render_template('posts.html', posts=posts)
+
+
 @posts.route('/post/<string:filename>')
 def post(filename):
     posts = _get_posts()

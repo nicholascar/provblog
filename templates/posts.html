@@ -1,0 +1,11 @@
+{% include 'page_header.html' %}
+
+<h2>Posts</h2>
+<ul>
+{%  for post in posts %}
+    <li><span style="font-size:smaller;">{{ post['date'] }}</span> <a href="{{ url_for('posts.post', filename=post['link']) }}">{{ post['title'] }}</a></li>
+{%  endfor %}
+</ul>
+
+{%  set posts = '' %}
+{% include 'page_footer.html' %}

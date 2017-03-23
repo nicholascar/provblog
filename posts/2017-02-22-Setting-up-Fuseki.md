@@ -1,3 +1,5 @@
+[//]: # (This is also a comment.)
+
 ### Purpose
 Here are basic Linux command line installation instructions for installing [Fuseki v2](https://jena.apache.org/documentation/fuseki2/), the system that provides a REST-style SPARQL 1.1 HTTP API for the [Jena](https://jena.apache.org/) triplestore, on Ubuntu 14.04+.
 

@@ -1,7 +1,7 @@
 /* Elements text styles */
 body {
     margin: 0 auto;
-    background-color:grey;
+    background-color:#f0f0f0;
     text-align:center;
 }
 
@@ -27,7 +27,19 @@ footer {
     clear:both;
     border-top:solid 2px grey;
     text-align:center;
-    padding: 0 0 5px 0;
+    padding: 10px 0 10px 0;
+}
+
+footer > a {
+    font-family: "Libre Baskerville", serif;
+    text-decoration:none;
+    color: #383838;
+    font-weight:bold;
+    margin: 5px;
+}
+
+footer > a:hover {
+    text-decoration:underline;
 }
 
 /* text */
@@ -70,19 +82,35 @@ header {
     background: #ffffff url('/static/img/banner-PROV.png') no-repeat right top;
 }
 
-header h1 {
-    background-color: rgba(255, 255, 255, 0.5);
+header div#title {
+    float:left;
+    margin-top:120px;
+    margin-bottom:20px;
+    font-size: 3em;
+    font-family:"Libre Baskerville", serif;
+    color: #383838;
+    padding-left: 1%;
 }
 
-header > div {
-    background-color: rgba(255, 255, 255, 0.5);
+header div#links {
+    float:right;
+    margin-top:140px;
 }
+
+/*header > div {*/
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+/*}*/
 
 header > div > a {
-    font-family: Asap, sans-serif;
+    font-family: "Libre Baskerville", serif;
+    text-decoration:none;
     color: #383838;
     font-weight:bold;
     margin: 0 0 0 2em;
+}
+
+header > div > a:hover {
+    text-decoration:underline;
 }
 
 /* Sidebar */
@@ -94,7 +122,7 @@ header > div > a {
 
 ul#postlinks li:before {
  content: "\0BB \020";
- }
+}
 
 ul#postlinks li {
     margin-bottom: 10px;
