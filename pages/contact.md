@@ -3,10 +3,10 @@ No fancy forms, just send me an email!
 
 **Nicholas Car**  
 *Canberra, Australia*  
-nick@kurrawong.net  
+<nick@kurrawong.net>  
 
-##### Code
-You will see me on GitHub as [nicholascar](http://github.com/nicholascar/) and BitBucket also as [nicholascar](https://bitbucket.org/nicholascar/).
+#### Code
+You will see me on GitHub as [nicholascar](http://github.com/nicholascar/) and BitBucket also as [nicholascar](https://bitbucket.org/nicholascar/) if you're into the technical things.
 
 #### Groups
 I work with several provenance-related initiatives, including:
